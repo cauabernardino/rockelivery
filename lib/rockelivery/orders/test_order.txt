@@ -1,0 +1,10 @@
+params = %{
+  "user_id" => "169d81b8-d64d-4012-b8f2-e1b3b5ba513a",
+  "items" => [
+    %{"id" => "3de619eb-bf67-4f75-b240-7ecacc269b9a", "quantity" => 2},
+    %{"id" => "15a43169-e6d4-4e2d-bea2-44b8020c8bf2", "quantity" => 1}
+  ],
+  "address" => "Rua Oratório, 555",
+  "comments" => "With mayonese",
+  "payment_method" => "credit_card"
+}
