@@ -1,5 +1,7 @@
 # Rockelivery
 
+[![codecov](https://codecov.io/gh/cauabernardino/rockelivery/branch/main/graph/badge.svg?token=KMHU4DU6OF)](https://codecov.io/gh/cauabernardino/rockelivery)
+
 Application made in Ignite: Elixir Bootcamp by Rocketseat.
 
 REST API with Postgres database, JWT auth and Phoenix Framework.
