@@ -12,6 +12,8 @@
 
 alias Rockelivery.{Item, Order, Repo, User}
 
+IO.puts("========== Inserting User... ==========")
+
 user = %User{
   age: 27,
   address: "Rua dos Aliados",
@@ -22,6 +24,8 @@ user = %User{
 }
 
 %User{id: user_id} = Repo.insert!(user)
+
+IO.puts("========== Inserting Items... ==========")
 
 item1 = %Item{
   category: :food,
@@ -40,9 +44,13 @@ item2 = %Item{
 Repo.insert!(item1)
 Repo.insert!(item2)
 
+IO.puts("========== Inserting Order... ==========")
+
 order = %Order{
   user_id: user_id,
   items: [item1, item2, item2],
   comments: "Lucky cookies, please",
   payment_method: :credit_card
 }
+
+Repo.insert!(order)
