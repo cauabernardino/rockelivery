@@ -7,8 +7,6 @@ defmodule Rockelivery.Application do
 
   def start(_type, _args) do
     children = [
-      # Start the Ecto repository
-      Rockelivery.Repo,
       # Start the Telemetry supervisor
       RockeliveryWeb.Telemetry,
       # Start the PubSub system
@@ -17,7 +15,9 @@ defmodule Rockelivery.Application do
       RockeliveryWeb.Endpoint,
       # Start a worker by calling: Rockelivery.Worker.start_link(arg)
       # {Rockelivery.Worker, arg}
-      Rockelivery.Orders.ReportRunner
+      Rockelivery.Orders.ReportRunner,
+      # Start the Ecto repository
+      Rockelivery.Repo
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
