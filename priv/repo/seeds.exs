@@ -51,6 +51,7 @@ order = %Order{
   user_id: user_id,
   items: [item1, item2, item2],
   comments: "Lucky cookies, please",
+  address: "Rua dos Aliados",
   payment_method: :credit_card
 }
 
