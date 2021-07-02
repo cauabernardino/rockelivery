@@ -20,6 +20,7 @@ user = %User{
   cep: "09200500",
   cpf: "12345678911",
   email: "johndoe@mail.com",
+  password: "test123",
   name: "John Doe"
 }
 
